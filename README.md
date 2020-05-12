@@ -1,14 +1,27 @@
 # Disaster Response Pipeline Project
-### Introductions:
-This project is designed by Udacity's Data Scientiest Nanodegree . This project builds a pipeline that analyzes the text 
-messages which is collected from various source and tries to classify the messages into different categories. In this way, people in the
-disaster area could respond quicklly and more lives could be saved.
 
-There are three sequential steps which also serve three different goals in this repository. The first one is the famous ETL (Extract,Transform,Load) 
-pipeline which extract data from different sources and transform and formalize them into a coherrent form and save them as .db file for future use.
+### Motivation:
+This project builds a pipeline that analyzes the text messages which is collected from various source and tries to classify the messages into different categories. In this way, people in the disaster area could respond quicklly and more lives could be saved.
+
+There are three sequential steps which also serve three different goals in this repository. The first one is the famous ETL (Extract,Transform,Load) pipeline which extract data from different sources and transform and formalize them into a coherrent form and save them as .db file for future use.
 The second step is using machine learning model (decision tree in this application) to learning the relation between plain text and their actual meaning.
 The third and final step is building a Web App in which some basic visualizations of the data are posted and model is embedded into the website so online
 testing is possible. These three steps could be used independently.
+
+### File Description
+
+├── app     
+│   ├── run.py                                     
+│   └── templates   
+│       ├── go.html                                  
+│       └── master.html                                
+├── data                   
+│   ├── disaster_categories.csv                      
+│   ├── disaster_messages.csv                        
+│   └── process_data.py                              
+├── models
+│   └── train_classifier.py                                  
+└── README.md
 
 ### Instructions:
 1. Run the following commands in the project's root directory to set up database and model.
@@ -22,6 +35,7 @@ testing is possible. These three steps could be used independently.
     `python run.py`
 
 3. Go to http://0.0.0.0:3001/
+
 
 ### Important files
 - 'data/process_data.py': This file is used to perform ETL pipeline and store formalized data into database file.

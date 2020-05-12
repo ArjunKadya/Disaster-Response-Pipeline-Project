@@ -11,16 +11,16 @@ testing is possible. These three steps could be used independently.
 ### File Description
 
 ├── app     
-│   ├── run.py                                     
+│   ├── run.py                                      
 │   └── templates   
-│       ├── go.html                                  
-│       └── master.html                                
+│       ├── go.html                
+│       └── master.html            
 ├── data                   
-│   ├── disaster_categories.csv                      
-│   ├── disaster_messages.csv                        
-│   └── process_data.py                              
+│   ├── disaster_categories.csv    
+│   ├── disaster_messages.csv      
+│   └── process_data.py                 
 ├── models
-│   └── train_classifier.py                                  
+│   └── train_classifier.py                      
 └── README.md
 
 ### Instructions:
